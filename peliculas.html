@@ -4,92 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/estilos-bootstrap.css">
+    <title>Cineplus</title>
 </head>
-<body class="contenedor-peliculas">
+<body>
     <header>
-        <a href="index.html" class="logo">
-            <!-- <img src="img/logo.png" alt="logo de la pagina"> -->
-            <span>CINEPLUS</span>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="peliculas.html">Películas</a></li>
-                <li><a href="cines.html">Cines</a></li>
-                <li><a href="comidas.html">Comidas y bebidas</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="./index.html">CINESPLUS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav nav-tabs lista">
+                  <li class="nav-item">
+                    <a class="nav-link menu-item" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-item" href="./peliculas.html">Películas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-item" href="./cines.html">Cines</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-item" href="./comidas.html">Comidas y bebidas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-item" href="./contactenos.html">Contáctanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section class="seccion-peliculas">
             <h1>PELICULAS EN CARTELERA</h1>
-            <div class="peliculas-lista">
-                <div class="pelicula">
-                    <img src="img/peli-1.jpg" alt="pelicula 1">
-                    <p>Uncharted</p>
-                    <p>Aventura/Acción</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-1.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Uncharted</h4>
+                                <p class="card-text text-white text-center">Aventura/Acción</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-2.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Luz Negra</h4>
+                                <p class="card-text text-white text-center">Acción/Misterio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-3.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Corazon de fuego</h4>
+                                <p class="card-text text-white text-center">Animación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-4.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Moonfall</h4>
+                                <p class="card-text text-white text-center">Ciencia ficción/Acción</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="pelicula">
-                    <img src="img/peli-2.jpg" alt="pelicula 2">
-                    <p>Luz Negra</p>
-                    <p>Acción/Misterio</p>
+                <div class="row">
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-2.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Uncharted</h4>
+                                <p class="card-text text-white text-center">Aventura/Acción</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-4.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Luz Negra</h4>
+                                <p class="card-text text-white text-center">Acción/Misterio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-1.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Corazon de fuego</h4>
+                                <p class="card-text text-white text-center">Animación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-3.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Moonfall</h4>
+                                <p class="card-text text-white text-center">Ciencia ficción/Acción</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="pelicula">
-                    <img src="img/peli-3.jpg" alt="pelicula 3">
-                    <p>Corazón de fuego</p>
-                    <p>Animación</p>
+                <div class="row">
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-3.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Uncharted</h4>
+                                <p class="card-text text-white text-center">Aventura/Acción</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-4.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Luz Negra</h4>
+                                <p class="card-text text-white text-center">Acción/Misterio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-2.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Corazon de fuego</h4>
+                                <p class="card-text text-white text-center">Animación</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pelicula">
+                        <div class="card bg-dark">
+                            <img src="img/peli-1.jpg" class="card-img-top" alt="pelicula 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-white text-center">Moonfall</h4>
+                                <p class="card-text text-white text-center">Ciencia ficción/Acción</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="pelicula">
-                    <img src="img/peli-4.jpg" alt="pelicula 4">
-                    <p>Moonfall</p>
-                    <p>Ciencia ficción/Acción</p>
-                </div>
-                <div class="pelicula">
-                    <img src="img/peli-3.jpg" alt="pelicula 3">
-                    <p>Corazón de fuego</p>
-                    <p>Animación</p>
-                </div>
-                <div class="pelicula">
-                    <img src="img/peli-4.jpg" alt="pelicula 4">
-                    <p>Moonfall</p>
-                    <p>Ciencia ficción/Acción</p>
-                </div>
-                <div class="pelicula">
-                    <img src="img/peli-1.jpg" alt="pelicula 1">
-                    <p>Uncharted</p>
-                    <p>Aventura/Acción</p>
-                </div>
-                <div class="pelicula">
-                    <img src="img/peli-2.jpg" alt="pelicula 2">
-                    <p>Luz Negra</p>
-                    <p>Acción/Misterio</p>
-                </div>
-                <div class="pelicula">
-                    <img src="img/peli-2.jpg" alt="pelicula 2">
-                    <p>Luz Negra</p>
-                    <p>Acción/Misterio</p>
-                </div>
-                <div class="pelicula">
-                    <img src="img/peli-1.jpg" alt="pelicula 1">
-                    <p>Uncharted</p>
-                    <p>Aventura/Acción</p>
-                </div>
-                <div class="pelicula">
-                    <img src="img/peli-4.jpg" alt="pelicula 4">
-                    <p>Moonfall</p>
-                    <p>Ciencia ficción/Acción</p>
-                </div>
-                <div class="pelicula">
-                    <img src="img/peli-3.jpg" alt="pelicula 3">
-                    <p>Corazón de fuego</p>
-                    <p>Animación</p>
-                </div>
+                
             </div>
         </section>
     </main>
+
+
     <footer>
         <div class="footer-informacion">
             <ul>
@@ -115,6 +187,9 @@
         <div class="footer-desarrollador">
             <p>Diseñado y desarrollado por Fredy Rodrigo</p>
         </div>
-    </footer>
+    </footer> 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </body>
 </html>
