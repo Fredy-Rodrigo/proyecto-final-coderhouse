@@ -41,18 +41,40 @@
     <main>
         <section class="seccion-contacto">
             <h1>CONTACTANOS</h1>
-            <div class="formulario">
-                <form action="">
-                    <input type="text" name="usuario" placeholder="Nombres y Apellidos" class="input">
-                    <input type="email" name="email"  placeholder="Correo electrónico" class="input">
-                    <input type="tel" name="telefono" placeholder="Teléfono de contacto" class="input">
-                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" class="input"></textarea>
-                    <input type="submit" value="Enviar" class="input-enviar">
-                </form>
-            </div>
-            <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249617.21115271014!2d-77.11893488893304!3d-12.162085631395199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c96d93617849%3A0x64f4fd5b1c9bde1c!2sCineplanet%20San%20Miguel!5e0!3m2!1ses!2spe!4v1645933474629!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <p>Oficina central: (01) 777 7777</p>
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-12 col-lg-6">
+                        <form class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <label for="nombre" class="form-label text-white">Nombres</label>
+                                <input type="text" class="form-control" placeholder="Nombres" aria-label="Nombres" id="nombres">
+                              </div>
+                              <div class="col-12 col-sm-6">
+                                <label for="apellidos" class="form-label text-white">Apellidos</label>
+                                <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos" id="apellidos">
+                              </div>
+                            <div class="col-md-12">
+                                <label for="inputEmail4" class="form-label text-white">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="correo@ejemplo.com">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="telefono" class="form-label text-white">Teléfono de contacto</label>
+                                <input type="tel" class="form-control" placeholder="Teléfono" id="telefono">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="exampleFormControlTextarea1" class="form-label text-white">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aquí su mensaje"></textarea>
+                              </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-danger">Sign in</button>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249617.21115271014!2d-77.11893488893304!3d-12.162085631395199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c96d93617849%3A0x64f4fd5b1c9bde1c!2sCineplanet%20San%20Miguel!5e0!3m2!1ses!2spe!4v1645933474629!5m2!1ses!2spe" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-3"></iframe>
+                        <p class="text-white">Oficina central: (01) 777 7777</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

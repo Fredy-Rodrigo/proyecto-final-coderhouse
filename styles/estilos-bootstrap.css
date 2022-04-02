@@ -29,23 +29,10 @@ main {
     padding-bottom: 40px;
 }
 
-.columna {
-    padding: 10px;
-}
-
-.img-grid {
-    width: 100%;
-    height: 100%;
-}
-
-.img-grid-main {
-    height: 100%;
-}
-
 h2, h1 {
+    text-align: center;
     color: white;
     font-size: 25px;
-    max-width: 1140px;
     margin: 30px auto 30px auto;
 }
 
@@ -62,20 +49,10 @@ h2, h1 {
 }
 
 .flecha-izquierda, .flecha-derecha {
-    width: 20px;
+    width: 60px;
     height: 30px;
     margin: 0 10px;
     cursor: pointer;
-}
-
-.estrenos-img {
-    width: 90%;
-    display: flex;
-}
-
-.estrenos-img-col img {
-    width: 100%;
-    height: 100%;
 }
 
 /* ESTILOS DEL FOOTER */
@@ -151,4 +128,46 @@ footer {
 
 .seccion-cines {
     overflow: hidden;
+}
+
+.carta-imagen {
+    height: 70%;
+}
+
+/* SECCION COMIDAS */
+
+.seccion-comida {
+    overflow: hidden;
+}
+
+
+/* SECCION CONTACTO */
+
+.seccion-contacto {
+    overflow: hidden;
+}
+
+
+@media screen and (min-width:768px) {
+    .comida-imagen {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-informacion, .footer-redes {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-informacion, .footer-redes {
+        width: 70%;
+        text-align: center;
+    }
 }
