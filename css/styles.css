@@ -23,7 +23,7 @@ header .logo {
 }
 header .logo span {
   font-family: "Limelight", cursive;
-  color: white;
+  color: #fff;
   font-size: 30px;
 }
 header .logo span:hover {
@@ -42,7 +42,7 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #fff;
 }
 header nav ul li a:hover {
   border-bottom: 2.5px solid #e50914;
@@ -107,7 +107,7 @@ header nav ul li a:hover {
   margin: 0 auto 70px auto;
 }
 .contenedor-index main .cartelera h2 {
-  color: white;
+  color: #fff;
   margin: 70px 0 30px 0;
 }
 .contenedor-index main .cartelera .cartelera-galeria {
@@ -138,7 +138,7 @@ header nav ul li a:hover {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  color: white;
+  color: #fff;
   opacity: 0;
   transition: all 0.2s;
 }
@@ -153,7 +153,7 @@ header nav ul li a:hover {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  color: white;
+  color: #fff;
 }
 .contenedor-index main .cartelera .cartelera-galeria .card-2 {
   background-image: url(../img/cartelera2.jpg);
@@ -195,7 +195,7 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #fff;
   font-size: 24px;
   cursor: pointer;
 }
@@ -204,7 +204,7 @@ header nav ul li a:hover {
 }
 .contenedor-index main .estrenos h2 {
   width: 75%;
-  color: white;
+  color: #fff;
   margin: 0 auto 30px auto;
 }
 .contenedor-index main .estrenos .estrenos-carousel {
@@ -237,7 +237,7 @@ header nav ul li a:hover {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  color: white;
+  color: #fff;
   opacity: 0;
   transition: all 0.2s;
 }
@@ -252,7 +252,7 @@ header nav ul li a:hover {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  color: white;
+  color: #fff;
 }
 .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card:hover {
   transform: scale(1.05);
@@ -292,14 +292,14 @@ footer .footer-informacion {
 }
 footer .footer-informacion ul li {
   list-style: none;
-  color: white;
+  color: #fff;
   margin: 20px 0;
 }
 footer .footer-redes {
   width: 40%;
 }
 footer .footer-redes .siguenos {
-  color: white;
+  color: #fff;
   padding: 20px 0;
 }
 footer .footer-redes .siguenos p {
@@ -309,7 +309,7 @@ footer .footer-redes .siguenos img {
   margin-right: 20px;
 }
 footer .footer-redes .libro p {
-  color: white;
+  color: #fff;
 }
 footer .footer-redes .libro img {
   margin: 5px 0;
@@ -320,7 +320,7 @@ footer .footer-desarrollador {
 }
 footer .footer-desarrollador p {
   text-align: center;
-  color: white;
+  color: #fff;
   font-size: 14px;
   margin: 20px 0;
 }
@@ -339,11 +339,11 @@ footer .footer-desarrollador p {
 .contenedor-peliculas main .seccion-peliculas {
   width: 75%;
   margin: auto;
-  color: white;
+  color: #fff;
 }
 .contenedor-peliculas main .seccion-peliculas h1 {
   margin: 30px 0;
-  color: white;
+  color: #fff;
 }
 .contenedor-peliculas main .seccion-peliculas .peliculas-lista {
   display: grid;
@@ -385,11 +385,11 @@ footer .footer-desarrollador p {
 .contenedor-cines main .seccion-cines {
   width: 75%;
   margin: auto;
-  color: white;
+  color: #fff;
 }
 .contenedor-cines main .seccion-cines h1 {
   margin: 30px 0;
-  color: #e50914;
+  color: #fff;
 }
 .contenedor-cines main .seccion-cines .cines {
   display: grid;
@@ -410,7 +410,7 @@ footer .footer-desarrollador p {
   background-color: transparent;
   border-radius: 20px;
   font-size: 16px;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -431,11 +431,11 @@ footer .footer-desarrollador p {
 }
 .contenedor-comidas main .seccion-comida h1 {
   margin: 30px 0;
-  color: #e50914;
+  color: #fff;
 }
 .contenedor-comidas main .seccion-comida h2 {
   margin-bottom: 20px;
-  color: white;
+  color: #fff;
   font-size: 20px;
 }
 .contenedor-comidas main .seccion-comida .combos {
@@ -453,7 +453,7 @@ footer .footer-desarrollador p {
   border: 2px solid #e50914;
   border-radius: 10px;
   overflow: hidden;
-  color: white;
+  color: #fff;
   font-size: 15px;
 }
 .contenedor-comidas main .seccion-comida .combos .combo img {
@@ -470,7 +470,7 @@ footer .footer-desarrollador p {
   background-color: #e50914;
   border-radius: 20px;
   font-size: 14px;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 .contenedor-comidas main .seccion-comida .productos {
@@ -488,12 +488,25 @@ footer .footer-desarrollador p {
   border: 2px solid #e50914;
   border-radius: 10px;
   overflow: hidden;
-  color: white;
+  color: #fff;
   font-size: 15px;
 }
 .contenedor-comidas main .seccion-comida .productos .producto img {
   width: 40%;
   border-radius: 10px;
+}
+.contenedor-comidas main .seccion-comida .productos .producto .producto-descripcion p {
+  margin-bottom: 10px;
+}
+.contenedor-comidas main .seccion-comida .productos .producto .producto-descripcion button {
+  display: block;
+  padding: 4px 20px;
+  border: solid 1px #e50914;
+  background-color: #e50914;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*ESTILOS DE LA SECCION CONTACTENOS*/
@@ -510,7 +523,7 @@ footer .footer-desarrollador p {
 .contenedor-contacto main .seccion-contacto {
   width: 75%;
   margin: 0 auto 50px auto;
-  color: white;
+  color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -534,7 +547,7 @@ footer .footer-desarrollador p {
   background-color: transparent;
   border-radius: 20px;
   font-size: 16px;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 .contenedor-contacto main .seccion-contacto .ubicacion {
@@ -545,239 +558,245 @@ footer .footer-desarrollador p {
 }
 
 @media screen and (max-width: 1024px) {
-  .cartelera-galeria {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 350px;
+  header {
+    flex-direction: column;
+    align-items: center;
   }
-
-  .estrenos-galeria {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  header .logo {
+    width: auto;
+    margin-top: 10px;
   }
-
-  .estrenos-galeria .card {
-    width: 24%;
-    height: 250px;
-    margin-bottom: 10px;
+  header nav {
+    width: auto;
+    margin: 10px 0;
   }
 
   .contenedor-index {
     grid-template-rows: auto auto auto;
   }
+  .contenedor-index main .cartelera .cartelera-galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+  }
+  .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card {
+    width: 24%;
+    height: 250px;
+    margin-bottom: 10px;
+  }
 
   .contenedor-peliculas {
     grid-template-rows: auto auto auto;
+  }
+  .contenedor-peliculas main .seccion-peliculas .peliculas-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contenedor-peliculas main .seccion-peliculas .peliculas-lista .pelicula img {
+    width: 90%;
+    margin: auto;
   }
 
   .contenedor-cines {
     grid-template-rows: auto auto auto;
   }
+  .contenedor-cines main .seccion-cines .cines {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .contenedor-comidas {
     grid-template-rows: auto auto auto;
+  }
+  .contenedor-comidas main .seccion-comida .combos .combo img {
+    width: 50%;
+  }
+  .contenedor-comidas main .seccion-comida .combos .combo .combo-descripcion {
+    font-size: 14px;
+  }
+  .contenedor-comidas main .seccion-comida .combos .combo .combo-descripcion button {
+    padding: 2px 20px;
+  }
+  .contenedor-comidas main .seccion-comida .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedor-comidas main .seccion-comida .productos .producto .producto-descripcion {
+    font-size: 14px;
+  }
+  .contenedor-comidas main .seccion-comida .productos .producto .producto-descripcion button {
+    padding: 2px 20px;
   }
 
   .contenedor-contacto {
     grid-template-rows: auto auto auto;
   }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    width: auto;
-    margin-top: 10px;
-  }
-
-  nav {
-    width: auto;
-    margin: 10px 0;
-  }
-
-  .peliculas-lista {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .pelicula img {
-    width: 90%;
-    margin: auto;
-  }
-
-  .cines {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .combo img {
-    width: 50%;
-  }
-
-  .combo-descripcion, .producto-descripcion {
-    font-size: 14px;
-  }
-
-  .combo-descripcion button, .producto-descripcion button {
-    padding: 2px 20px;
-  }
-
-  .productos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .seccion-contacto {
+  .contenedor-contacto main .seccion-contacto {
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
-
-  .input-enviar {
+  .contenedor-contacto main .seccion-contacto .formulario {
+    width: 450px;
+  }
+  .contenedor-contacto main .seccion-contacto .formulario .input-enviar {
     margin: auto;
   }
-
-  .formulario, .ubicacion {
+  .contenedor-contacto main .seccion-contacto .ubicacion {
     width: 450px;
   }
 }
 @media screen and (max-width: 768px) {
-  nav ul {
+  header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  nav ul li {
+  header nav ul li {
     padding: 0 10px;
   }
 
-  .cartelera-galeria {
+  .contenedor-index main .cartelera .cartelera-galeria {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .estrenos-galeria .card {
+  .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card {
     width: 32%;
     height: 250px;
   }
 
-  .peliculas-lista {
+  .contenedor-peliculas main .seccion-peliculas .peliculas-lista {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .pelicula img {
+  .contenedor-peliculas main .seccion-peliculas .peliculas-lista .pelicula img {
     width: 80%;
     margin: auto;
   }
 
-  .cines {
+  .contenedor-cines main .seccion-cines .cines {
     grid-template-columns: 1fr;
   }
-
-  .cine {
+  .contenedor-cines main .seccion-cines .cines .cine {
     text-align: center;
   }
-
-  .cine img {
+  .contenedor-cines main .seccion-cines .cines .cine img {
     display: block;
     max-width: 400px;
     margin: 5px auto 5px auto;
   }
 
-  .combo, .producto {
+  .contenedor-comidas main .seccion-comida .combo {
     flex-direction: column;
   }
-
-  .combo img, .producto img {
+  .contenedor-comidas main .seccion-comida .combo img {
     width: 70%;
   }
-
-  .combo-descripcion, .producto-descripcion {
+  .contenedor-comidas main .seccion-comida .combo .combo-descripcion {
     text-align: center;
   }
-
-  .combo-descripcion button, .producto-descripcion button {
+  .contenedor-comidas main .seccion-comida .combo .combo-descripcion button {
+    margin: auto;
+  }
+  .contenedor-comidas main .seccion-comida .producto {
+    flex-direction: column;
+  }
+  .contenedor-comidas main .seccion-comida .producto img {
+    width: 70%;
+  }
+  .contenedor-comidas main .seccion-comida .producto .producto-descripcion {
+    text-align: center;
+  }
+  .contenedor-comidas main .seccion-comida .producto .producto-descripcion button {
     margin: auto;
   }
 
-  .formulario, .ubicacion {
+  .contenedor-contacto main .seccion-contacto .formulario {
+    max-width: 100%;
+  }
+  .contenedor-contacto main .seccion-contacto .ubicacion {
     max-width: 100%;
   }
 
-  .footer-informacion, .footer-redes {
+  footer .footer-informacion {
+    font-size: 14px;
+  }
+  footer .footer-redes {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {
-  nav ul {
+  header nav ul {
     flex-direction: column;
     align-items: center;
   }
-
-  nav ul li {
+  header nav ul li {
     padding: 5px 0;
   }
 
-  .cartelera-galeria {
+  .contenedor-index main .cartelera .cartelera-galeria {
     grid-auto-rows: 250px;
   }
-
-  .estrenos-galeria .card {
+  .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card {
     width: 48%;
     height: 230px;
   }
 
-  .seccion-peliculas h1 {
+  .contenedor-peliculas main .seccion-peliculas h1 {
     font-size: 18px;
   }
-
-  .peliculas-lista {
+  .contenedor-peliculas main .seccion-peliculas .peliculas-lista {
     grid-template-columns: 1fr;
   }
-
-  .pelicula img {
+  .contenedor-peliculas main .seccion-peliculas .peliculas-lista .pelicula img {
     width: 50%;
     min-width: 200px;
   }
-
-  .pelicula p:nth-child(2) {
+  .contenedor-peliculas main .seccion-peliculas .peliculas-lista .pelicula p:nth-child(2) {
     font-weight: bold;
     font-size: 14px;
   }
-
-  .pelicula p:last-child {
+  .contenedor-peliculas main .seccion-peliculas .peliculas-lista .pelicula p:last-child {
     font-size: 12px;
   }
 
-  .seccion-cines h1, h2 {
+  .contenedor-cines main .seccion-cines h1 {
     font-size: 18px;
   }
-
-  .cine p {
+  .contenedor-cines main .seccion-cines .cines .cine h2 {
+    font-size: 18px;
+  }
+  .contenedor-cines main .seccion-cines .cines .cine p {
+    font-size: 14px;
+  }
+  .contenedor-cines main .seccion-cines button {
     font-size: 14px;
   }
 
-  .seccion-cines button {
-    font-size: 14px;
-  }
-
-  .seccion-comida h1, h2 {
+  .contenedor-comidas main .seccion-comida h1, .contenedor-comidas main .seccion-comida h2 {
     font-size: 18px;
   }
-
-  .combo img, .producto img {
+  .contenedor-comidas main .seccion-comida .combos {
+    grid-template-columns: 1fr;
+  }
+  .contenedor-comidas main .seccion-comida .combos .combo img {
     width: 40%;
   }
-
-  .productos, .combos {
+  .contenedor-comidas main .seccion-comida .productos {
     grid-template-columns: 1fr;
+  }
+  .contenedor-comidas main .seccion-comida .productos .producto img {
+    width: 40%;
   }
 
   footer {
     flex-direction: column;
     align-items: center;
   }
-
-  .footer-informacion, .footer-redes {
+  footer .footer-informacion {
+    width: 70%;
+    text-align: center;
+  }
+  footer .footer-redes {
     width: 70%;
     text-align: center;
   }

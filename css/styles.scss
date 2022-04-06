@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Limelight&display=swap');
 
+$primary-color: #e50914;
+$secondary-color: #fff;
+$background-color: #292f33;
+$hover-card-color: #64727c73;
+
 * {
     margin: 0;
     padding: 0;
@@ -25,12 +30,12 @@ header {
 
         span {
             font-family: 'Limelight', cursive;
-            color: white;
+            color: $secondary-color;
             font-size: 30px;
         }
 
         span:hover {
-            color: #e50914;
+            color: $primary-color;
         }
     }
 
@@ -48,11 +53,11 @@ header {
 
                 a {
                     text-decoration:none;
-                    color: whitesmoke;
+                    color: $secondary-color
                 }
 
                 a:hover {
-                    border-bottom: 2.5px solid #e50914;
+                    border-bottom: 2.5px solid $primary-color;
                 }
             }
         }
@@ -71,7 +76,7 @@ header {
     
     main {
         grid-area: main;
-        background-color: #292f33;
+        background-color: $background-color;
         
         .banner {
             width: 95%;
@@ -110,7 +115,7 @@ header {
             margin: 0 auto 70px auto;
             
             h2{
-                color: white;
+                color: $secondary-color;
                 margin: 70px 0 30px 0;
             }
             
@@ -143,7 +148,7 @@ header {
                         align-items: center;
                         text-align: center;
                         flex-direction: column;
-                        color: white;
+                        color: $secondary-color;
                         opacity: 0;
                         transition: all 0.2s;
     
@@ -155,11 +160,11 @@ header {
                         button {
                             padding: 5px 10px;
                             margin-top: 10px;
-                            background-color: #e50914;
+                            background-color: $primary-color;
                             border: none;
                             border-radius: 3px;
                             cursor: pointer;
-                            color: white;
+                            color: $secondary-color;
                         }
                         
                     }
@@ -202,7 +207,7 @@ header {
                 }
                 
                 .card:hover .card-info {
-                    background-color: #64727c73;
+                    background-color: $hover-card-color;
                     opacity: 1;
                 }
                 
@@ -215,7 +220,7 @@ header {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    color: white;
+                    color: $secondary-color;
                     font-size: 24px;
                     cursor: pointer;
                 }
@@ -227,7 +232,7 @@ header {
             
             h2 {
                 width: 75%;
-                color: white;
+                color: $secondary-color;
                 margin: 0 auto 30px auto;
             }
             
@@ -262,7 +267,7 @@ header {
                             align-items: center;
                             text-align: center;
                             flex-direction: column;
-                            color: white;
+                            color: $secondary-color;
                             opacity: 0;
                             transition: all 0.2s;
     
@@ -274,11 +279,11 @@ header {
                             button {
                                 padding: 5px 10px;
                                 margin-top: 10px;
-                                background-color: #e50914;
+                                background-color: $primary-color;
                                 border: none;
                                 border-radius: 3px;
                                 cursor: pointer;
-                                color: white;
+                                color: $secondary-color;
                             }
                             
                         }
@@ -289,7 +294,7 @@ header {
                     }
                     
                     .card:hover .card-info {
-                        background-color: #64727c73;
+                        background-color: $hover-card-color;
                         opacity: 1;
                     }
     
@@ -336,7 +341,7 @@ footer {
         ul {
             li {
                 list-style: none;
-                color: white;
+                color: $secondary-color;
                 margin: 20px 0;
             }
         }
@@ -346,7 +351,7 @@ footer {
         width: 40%;
         
         .siguenos {
-            color: white;
+            color: $secondary-color;
             padding: 20px 0;
             
             p {
@@ -360,7 +365,7 @@ footer {
 
         .libro {
             p {
-                color: white;
+                color: $secondary-color;
             }
             
             img {
@@ -375,7 +380,7 @@ footer {
         
         p {
             text-align: center;
-            color: white;
+            color: $secondary-color;
             font-size: 14px;
             margin: 20px 0;
         }
@@ -394,16 +399,16 @@ footer {
     
     main {
         grid-area: main;
-        background-color: #292f33;
+        background-color: $background-color;
         
         .seccion-peliculas {
             width: 75%;
             margin: auto;
-            color: white;
+            color: $secondary-color;
             
             h1 {
                 margin: 30px 0;
-                color: white;
+                color: $secondary-color;
             }
             
             .peliculas-lista {
@@ -453,16 +458,16 @@ footer {
     
     main {
         grid-area: main;
-        background-color: #292f33;
+        background-color: $background-color;
         
         .seccion-cines {
             width: 75%;
             margin: auto;
-            color: white;
+            color: $secondary-color;
             
             h1 {
                 margin: 30px 0;
-                color: #e50914;
+                color: $secondary-color;
             }
             
             .cines {
@@ -484,11 +489,11 @@ footer {
                 display: block;
                 margin: 50px auto 40px auto;
                 padding: 5px 20px;
-                border: solid 2px #e50914;
+                border: solid 2px $primary-color;
                 background-color: transparent;
                 border-radius: 20px;
                 font-size: 16px;
-                color: white;
+                color: $secondary-color;
                 cursor: pointer;
             }
         }
@@ -507,7 +512,7 @@ footer {
     
     main {
         grid-area: main;
-        background-color: #292f33;
+        background-color: $background-color;
         
         .seccion-comida {
             width: 75%;
@@ -515,12 +520,12 @@ footer {
             
             h1 {
                 margin: 30px 0;
-                color: #e50914;
+                color: $secondary-color;
             }
             
             h2 {
                 margin-bottom: 20px;
-                color: white;
+                color: $secondary-color;
                 font-size: 20px;
             }
             
@@ -536,10 +541,10 @@ footer {
                     align-items: center;
                     gap: 10px;
                     padding: 10px;
-                    border: 2px solid #e50914;
+                    border: 2px solid $primary-color;
                     border-radius: 10px;
                     overflow: hidden;
-                    color: white;
+                    color: $secondary-color;
                     font-size: 15px;
                     
                     img {
@@ -554,11 +559,11 @@ footer {
                         button {
                             display: block;
                             padding: 4px 20px;
-                            border: solid 1px #e50914;
-                            background-color: #e50914;
+                            border: solid 1px $primary-color;
+                            background-color: $primary-color;
                             border-radius: 20px;
                             font-size: 14px;
-                            color: white;
+                            color: $secondary-color;
                             cursor: pointer;
                         }
                     } 
@@ -577,15 +582,31 @@ footer {
                     align-items: center;
                     gap: 10px;
                     padding: 10px;
-                    border: 2px solid #e50914;
+                    border: 2px solid $primary-color;
                     border-radius: 10px;
                     overflow: hidden;
-                    color: white;
+                    color: $secondary-color;
                     font-size: 15px;
                     
                     img {
                         width: 40%;
                         border-radius: 10px;
+                    }
+
+                    .producto-descripcion {
+                        p {
+                        margin-bottom: 10px;
+                        }
+                        button {
+                            display: block;
+                            padding: 4px 20px;
+                            border: solid 1px $primary-color;
+                            background-color: $primary-color;
+                            border-radius: 20px;
+                            font-size: 14px;
+                            color: $secondary-color;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -606,12 +627,12 @@ footer {
     
     main {
         grid-area: main;
-        background-color: #292f33;
+        background-color: $background-color;
         
         .seccion-contacto {
             width: 75%;
             margin: 0 auto 50px auto;
-            color: white;
+            color: $secondary-color;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -619,7 +640,7 @@ footer {
             h1 {
                 width: 100%;
                 margin: 30px 0;
-                color: #e50914;
+                color: $primary-color;
             }
             
             .formulario {
@@ -633,11 +654,11 @@ footer {
                 .input-enviar {
                     display: block;
                     padding: 3px 20px;
-                    border: solid 2px #e50914;
+                    border: solid 2px $primary-color;
                     background-color: transparent;
                     border-radius: 20px;
                     font-size: 16px;
-                    color: white;
+                    color: $secondary-color;
                     cursor: pointer;
                 }
             }
@@ -654,245 +675,399 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    .cartelera-galeria {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 350px;
+    header {
+        flex-direction: column;
+        align-items: center;
+        
+        .logo {
+            width: auto;
+            margin-top: 10px;
+        }
+        
+        nav {
+            width: auto;
+            margin: 10px 0;
+        }
     }
-
-    .estrenos-galeria {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .estrenos-galeria .card {
-        width: 24%;
-        height: 250px;
-        margin-bottom: 10px;
-    }    
-
+    
     .contenedor-index {
         grid-template-rows: auto auto auto;
-    }
 
+        main {
+            .cartelera {
+                .cartelera-galeria {
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-auto-rows: 350px;
+                }
+            }
+
+            .estrenos {
+                .estrenos-carousel {
+                    .estrenos-galeria {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 10px;
+                        
+                        .card {
+                            width: 24%;
+                            height: 250px;
+                            margin-bottom: 10px;
+                        }    
+                    }
+                }
+            }
+        }
+        
+    }
+    
     .contenedor-peliculas {
         grid-template-rows: auto auto auto;
+
+        main {
+            .seccion-peliculas {
+                .peliculas-lista {
+                    grid-template-columns: repeat(3, 1fr);
+                    .pelicula {
+                        img {
+                            width: 90%;
+                            margin: auto;   
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .contenedor-cines {
         grid-template-rows: auto auto auto;
+
+        main {
+            .seccion-cines {
+                .cines {
+                    grid-template-columns: repeat(2, 1fr);
+                }        
+            }
+        }
     }
 
     .contenedor-comidas {
         grid-template-rows: auto auto auto;
+        main {
+            .seccion-comida {
+                .combos {
+                    .combo {
+                        img  {
+                            width: 50%;
+                        }
+                        .combo-descripcion {
+                            font-size: 14px;
+                            button{
+                                padding: 2px 20px;
+                            }
+                        }
+                    }
+                }
+                
+                .productos {
+                    grid-template-columns: repeat(2, 1fr);
+                    
+                    .producto {
+                        .producto-descripcion {
+                            font-size: 14px;
+                            
+                            button {
+                                padding: 2px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .contenedor-contacto {
         grid-template-rows: auto auto auto;
-    }
 
-    header {
-        flex-direction: column;
-        align-items: center;
+        main {
+            .seccion-contacto {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+    
+                .formulario {
+                    width: 450px;
+                    .input-enviar {
+                        margin: auto;
+                    }
+                }
+                .ubicacion {
+                    width: 450px;
+                }
+            }
+        }
+        
     }
-
-    .logo {
-        width: auto;
-        margin-top: 10px;
-    }
-
-    nav {
-        width: auto;
-        margin: 10px 0;
-    }
-
-    .peliculas-lista {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .pelicula img {
-        width: 90%;
-        margin: auto;
-    }
-
-    .cines {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .combo img  {
-        width: 50%;
-    }
-
-    .combo-descripcion, .producto-descripcion {
-        font-size: 14px;
-    }
-
-    .combo-descripcion button, .producto-descripcion button {
-        padding: 2px 20px;
-    }
-
-    .productos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .seccion-contacto {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .input-enviar {
-        margin: auto;
-    }
-
-    .formulario, .ubicacion {
-        width: 450px;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav ul li {
-        padding: 0 10px;
-    }
-
-    .cartelera-galeria {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .estrenos-galeria .card {
-        width: 32%;
-        height: 250px;
-    }    
-
-
-    .peliculas-lista {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .pelicula img {
-        width: 80%;
-        margin: auto;
+    header {
+        nav {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                li {
+                    padding: 0 10px;
+                }
+            }
+        }
     }
     
-    .cines {
-        grid-template-columns: 1fr;
+    .contenedor-index {
+        main {
+            .cartelera {
+                .cartelera-galeria {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            .estrenos {
+                .estrenos-carousel {
+                    .estrenos-galeria {
+                        .card {
+                            width: 32%;
+                            height: 250px;
+                        }    
+                    }
+                }
+            }
+        }
     }
 
-    .cine {
-        text-align: center;
+    .contenedor-peliculas {
+        main {
+            .seccion-peliculas {
+                .peliculas-lista {
+                    grid-template-columns: repeat(2, 1fr);
+                    .pelicula {
+                        img {
+                            width: 80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .cine img {
-        display: block;
-        max-width: 400px;
-        margin: 5px auto 5px auto;
+    .contenedor-cines {
+        main {
+            .seccion-cines {
+                .cines {
+                    grid-template-columns: 1fr;
+                    .cine {
+                        text-align: center;
+                        img {
+                            display: block;
+                            max-width: 400px;
+                            margin: 5px auto 5px auto;
+                        }
+                    }
+                }
+        
+            }
+        }
     }
 
-    .combo, .producto {
-        flex-direction: column;
+    .contenedor-comidas {
+        main {
+            .seccion-comida {
+                .combo {
+                    flex-direction: column;
+                    img {
+                        width: 70%;
+                    }
+                    .combo-descripcion {
+                        text-align: center;
+                        button {
+                            margin: auto;
+                        }
+                    }
+                }
+        
+                .producto {
+                    flex-direction: column;
+                    img  {
+                        width: 70%;
+                    }
+                    .producto-descripcion {
+                        text-align: center;
+                        button {
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .combo img, .producto img  {
-        width: 70%;
+    .contenedor-contacto {
+        main {
+            .seccion-contacto {
+                .formulario {
+                    max-width: 100%;
+                }
+
+                .ubicacion {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 
-    .combo-descripcion, .producto-descripcion {
-        text-align: center;
-    }
+    footer {
+        .footer-informacion {
+            font-size: 14px;
+        }
 
-    .combo-descripcion button, .producto-descripcion button {
-        margin: auto;
-    }
-
-    .formulario, .ubicacion {
-        max-width: 100%;
-    }
-
-    .footer-informacion, .footer-redes {
-        font-size: 14px;
+        .footer-redes {
+            font-size: 14px;
+        }
     }
 }
 
 @media screen and (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    header {
+        nav {
+            ul {
+                flex-direction: column;
+                align-items: center;
+                li {
+                    padding: 5px 0;
+                }
+            }
+        }
     }
 
-    nav ul li {
-        padding: 5px 0;
+    .contenedor-index {
+        main {
+            .cartelera {
+                .cartelera-galeria {
+                    grid-auto-rows: 250px;
+                }
+            }
+
+            .estrenos {
+                .estrenos-carousel {
+                    .estrenos-galeria {
+                        .card {
+                            width: 48%;
+                            height: 230px;
+                        }    
+                    }
+                }
+            }
+        }
+
     }
 
-    .cartelera-galeria {
-        grid-auto-rows: 250px;
+    .contenedor-peliculas {
+        main {
+            .seccion-peliculas {
+                h1 {
+                    font-size: 18px;
+                }
+                
+                .peliculas-lista {
+                    grid-template-columns: 1fr;
+                    
+                    .pelicula {
+                        img {
+                            width: 50%;
+                            min-width: 200px;
+                        }
+                        
+                        p:nth-child(2) {
+                            font-weight: bold;
+                            font-size: 14px;
+                        }
+                        
+                        p:last-child {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .estrenos-galeria .card {
-        width: 48%;
-        height: 230px;
-    }    
-
-    .seccion-peliculas h1 {
-        font-size: 18px;
+    .contenedor-cines {
+        main {
+            .seccion-cines {
+                h1 {
+                    font-size: 18px;
+                }
+        
+                .cines {
+                    .cine {
+                        h2 {
+                            font-size: 18px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 
-    .peliculas-lista {
-        grid-template-columns: 1fr;
-    }
-
-    .pelicula img {
-        width: 50%;
-        min-width: 200px;
-    }
-
-    .pelicula p:nth-child(2) {
-        font-weight: bold;
-        font-size: 14px;
-    }
-    
-    .pelicula p:last-child {
-        font-size: 12px;
-    }
-
-    .seccion-cines h1, h2 {
-        font-size: 18px;
-    }
-
-    .cine p {
-        font-size: 14px;
-    }
-
-    .seccion-cines button {
-        font-size: 14px;
-    }
-
-    .seccion-comida h1, h2{
-        font-size: 18px;
-    }
-
-    .combo img , .producto img {
-        width: 40%;
-    }
-
-    .productos, .combos {
-        grid-template-columns: 1fr;
+    .contenedor-comidas {
+        main {
+            .seccion-comida {
+                h1, h2{
+                    font-size: 18px;
+                }
+        
+                .combos {
+                    grid-template-columns: 1fr;
+                    .combo {
+                        img {
+                            width: 40%;
+                        }
+                    }
+                }
+                
+                .productos {
+                    grid-template-columns: 1fr;
+                    .producto {
+                        img {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     footer {
         flex-direction: column;
         align-items: center;
+        
+        .footer-informacion {
+            width: 70%;
+            text-align: center;
+        }
+
+        .footer-redes {
+            width: 70%;
+            text-align: center;
+        }
     }
 
-    .footer-informacion, .footer-redes {
-        width: 70%;
-        text-align: center;
-    }
 }
 
