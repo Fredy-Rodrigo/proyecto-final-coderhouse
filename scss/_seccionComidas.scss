@@ -1,0 +1,98 @@
+.contenedor-comidas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    
+    main {
+        grid-area: main;
+        background-color: $background-color;
+        
+        .seccion-comida {
+            width: 75%;
+            margin: auto;
+            
+            h1 {
+                margin: map-get($titulos, margen);
+                text-align: map-get($titulos, centro);
+                font-size: map-get($titulos, tamanio-h1);
+                color: map-get($titulos, color);
+            }
+            
+            h2 {
+                margin-bottom: 20px;
+                color: map-get($titulos, color);
+                font-size: map-get($titulos, tamanio-h2);
+            }
+            
+            .combos {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                gap: 20px;
+                margin-bottom: 50px;
+                
+                .combo{
+                    @include flex(flex, none, center);
+                    gap: 10px;
+                    padding: 10px;
+                    border: 2px solid $primary-color;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    color: $secondary-color;
+                    font-size: 15px;
+                    
+                    img {
+                        width: 40%;
+                        border-radius: 10px;
+                    }
+                    .combo-descripcion{
+                        p {
+                            margin-bottom: 10px;
+                        }
+    
+                        button {
+                            @extend %card-button;
+                        }
+                    } 
+                }
+            }
+    
+            .productos {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                gap: 20px;
+                margin-bottom: 50px;
+                
+                .producto {
+                    @include flex(flex, none, center);
+                    gap: 10px;
+                    padding: 10px;
+                    border: 2px solid $primary-color;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    color: $secondary-color;
+                    font-size: 15px;
+                    
+                    img {
+                        width: 40%;
+                        border-radius: 10px;
+                    }
+
+                    .producto-descripcion {
+                        p {
+                        margin-bottom: 10px;
+                        }
+                        button {
+                            @extend %card-button;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

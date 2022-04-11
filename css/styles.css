@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Limelight&display=swap");
+.contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card .card-info, .contenedor-index main .estrenos .estrenos-carousel, .contenedor-index main .cartelera .cartelera-galeria .ver-mas, .contenedor-index main .cartelera .cartelera-galeria .card .card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-comidas main .seccion-comida .productos .producto .producto-descripcion button, .contenedor-comidas main .seccion-comida .combos .combo .combo-descripcion button, .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card .card-info button, .contenedor-index main .cartelera .cartelera-galeria .card .card-info button {
+  padding: 5px 20px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contenedor-contacto main .seccion-contacto .formulario .input-enviar, .contenedor-cines main .seccion-cines button, .contenedor-peliculas main .seccion-peliculas button {
+  display: block;
+  padding: 3px 20px;
+  border: solid 2px #e50914;
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +36,10 @@
 header {
   width: 100%;
   grid-area: header;
+  background: linear-gradient(180deg, #221f1f 10%, #292f33 100%);
   display: flex;
   justify-content: center;
-  background: linear-gradient(180deg, #221f1f 10%, #292f33 100%);
+  align-items: none;
 }
 header .logo {
   width: 12%;
@@ -46,6 +73,55 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   border-bottom: 2.5px solid #e50914;
+}
+
+/*ESTILOS DEL FOOTER*/
+footer {
+  width: 100%;
+  grid-area: footer;
+  background-color: #221f1f;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: wrap;
+}
+footer .footer-informacion {
+  width: 40%;
+  padding: 20px 0;
+}
+footer .footer-informacion ul li {
+  list-style: none;
+  color: #fff;
+  margin: 20px 0;
+}
+footer .footer-redes {
+  width: 40%;
+}
+footer .footer-redes .siguenos {
+  color: #fff;
+  padding: 20px 0;
+}
+footer .footer-redes .siguenos p {
+  margin: 20px 0 10px 0;
+}
+footer .footer-redes .siguenos img {
+  margin-right: 20px;
+}
+footer .footer-redes .libro p {
+  color: #fff;
+}
+footer .footer-redes .libro img {
+  margin: 5px 0;
+}
+footer .footer-desarrollador {
+  width: 80%;
+  border-top: 1px solid #7e7e7e;
+}
+footer .footer-desarrollador p {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin: 20px 0;
 }
 
 /*ESTILOS DE LA PAGINA PRINCIPAL*/
@@ -109,6 +185,8 @@ header nav ul li a:hover {
 .contenedor-index main .cartelera h2 {
   color: #fff;
   margin: 70px 0 30px 0;
+  text-align: center;
+  font-size: 24px;
 }
 .contenedor-index main .cartelera .cartelera-galeria {
   display: grid;
@@ -133,9 +211,6 @@ header nav ul li a:hover {
 }
 .contenedor-index main .cartelera .cartelera-galeria .card .card-info {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   flex-direction: column;
   color: #fff;
@@ -143,17 +218,11 @@ header nav ul li a:hover {
   transition: all 0.2s;
 }
 .contenedor-index main .cartelera .cartelera-galeria .card .card-info h3 {
-  font-size: 20px;
-  padding-bottom: 40px;
+  font-size: 18px;
+  padding: 0 20px 40px 20px;
 }
 .contenedor-index main .cartelera .cartelera-galeria .card .card-info button {
-  padding: 5px 10px;
   margin-top: 10px;
-  background-color: #e50914;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  color: #fff;
 }
 .contenedor-index main .cartelera .cartelera-galeria .card-2 {
   background-image: url(../img/cartelera2.jpg);
@@ -192,9 +261,6 @@ header nav ul li a:hover {
   background-image: none;
   background-color: #49535a;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
   font-size: 24px;
   cursor: pointer;
@@ -203,14 +269,10 @@ header nav ul li a:hover {
   margin-bottom: 70px;
 }
 .contenedor-index main .estrenos h2 {
-  width: 75%;
   color: #fff;
-  margin: 0 auto 30px auto;
-}
-.contenedor-index main .estrenos .estrenos-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 70px 0 30px 0;
+  text-align: center;
+  font-size: 24px;
 }
 .contenedor-index main .estrenos .estrenos-carousel .flecha-izquierda, .contenedor-index main .estrenos .estrenos-carousel .flecha-derecha {
   width: 20px;
@@ -232,9 +294,6 @@ header nav ul li a:hover {
 }
 .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card .card-info {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   flex-direction: column;
   color: #fff;
@@ -242,17 +301,11 @@ header nav ul li a:hover {
   transition: all 0.2s;
 }
 .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card .card-info h3 {
-  font-size: 20px;
-  padding-bottom: 40px;
+  font-size: 18px;
+  padding: 0 20px 40px 20px;
 }
 .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card .card-info button {
-  padding: 5px 10px;
   margin-top: 10px;
-  background-color: #e50914;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  color: #fff;
 }
 .contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card:hover {
   transform: scale(1.05);
@@ -277,55 +330,6 @@ header nav ul li a:hover {
   background-image: url(../img/estreno5.jpg);
 }
 
-/*ESTILOS DEL FOOTER*/
-footer {
-  width: 100%;
-  grid-area: footer;
-  background-color: #221f1f;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-footer .footer-informacion {
-  width: 40%;
-  padding: 20px 0;
-}
-footer .footer-informacion ul li {
-  list-style: none;
-  color: #fff;
-  margin: 20px 0;
-}
-footer .footer-redes {
-  width: 40%;
-}
-footer .footer-redes .siguenos {
-  color: #fff;
-  padding: 20px 0;
-}
-footer .footer-redes .siguenos p {
-  margin: 20px 0 10px 0;
-}
-footer .footer-redes .siguenos img {
-  margin-right: 20px;
-}
-footer .footer-redes .libro p {
-  color: #fff;
-}
-footer .footer-redes .libro img {
-  margin: 5px 0;
-}
-footer .footer-desarrollador {
-  width: 80%;
-  border-top: 1px solid #7e7e7e;
-}
-footer .footer-desarrollador p {
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
-  margin: 20px 0;
-}
-
-/*ESTILOS DE LA SECCION PELICULAS*/
 .contenedor-peliculas {
   display: grid;
   grid-template-columns: 1fr;
@@ -342,7 +346,9 @@ footer .footer-desarrollador p {
   color: #fff;
 }
 .contenedor-peliculas main .seccion-peliculas h1 {
-  margin: 30px 0;
+  margin: 70px 0 30px 0;
+  text-align: center;
+  font-size: 24px;
   color: #fff;
 }
 .contenedor-peliculas main .seccion-peliculas .peliculas-lista {
@@ -370,8 +376,10 @@ footer .footer-desarrollador p {
   transform: scale(1.05);
   box-shadow: 0 0 10px 0 #d1ecff91;
 }
+.contenedor-peliculas main .seccion-peliculas button {
+  margin: 0 auto 50px auto;
+}
 
-/*ESTILOS DE LA SECCION CINES*/
 .contenedor-cines {
   display: grid;
   grid-template-columns: 1fr;
@@ -388,7 +396,9 @@ footer .footer-desarrollador p {
   color: #fff;
 }
 .contenedor-cines main .seccion-cines h1 {
-  margin: 30px 0;
+  margin: 70px 0 30px 0;
+  text-align: center;
+  font-size: 24px;
   color: #fff;
 }
 .contenedor-cines main .seccion-cines .cines {
@@ -403,18 +413,9 @@ footer .footer-desarrollador p {
   object-fit: cover;
 }
 .contenedor-cines main .seccion-cines button {
-  display: block;
-  margin: 50px auto 40px auto;
-  padding: 5px 20px;
-  border: solid 2px #e50914;
-  background-color: transparent;
-  border-radius: 20px;
-  font-size: 16px;
-  color: #fff;
-  cursor: pointer;
+  margin: 50px auto 50px auto;
 }
 
-/*ESTILOS DE LA SECCION COMIDAS Y BEBIDAS*/
 .contenedor-comidas {
   display: grid;
   grid-template-columns: 1fr;
@@ -430,7 +431,9 @@ footer .footer-desarrollador p {
   margin: auto;
 }
 .contenedor-comidas main .seccion-comida h1 {
-  margin: 30px 0;
+  margin: 70px 0 30px 0;
+  text-align: center;
+  font-size: 24px;
   color: #fff;
 }
 .contenedor-comidas main .seccion-comida h2 {
@@ -447,6 +450,7 @@ footer .footer-desarrollador p {
 }
 .contenedor-comidas main .seccion-comida .combos .combo {
   display: flex;
+  justify-content: none;
   align-items: center;
   gap: 10px;
   padding: 10px;
@@ -463,16 +467,6 @@ footer .footer-desarrollador p {
 .contenedor-comidas main .seccion-comida .combos .combo .combo-descripcion p {
   margin-bottom: 10px;
 }
-.contenedor-comidas main .seccion-comida .combos .combo .combo-descripcion button {
-  display: block;
-  padding: 4px 20px;
-  border: solid 1px #e50914;
-  background-color: #e50914;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-}
 .contenedor-comidas main .seccion-comida .productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -482,6 +476,7 @@ footer .footer-desarrollador p {
 }
 .contenedor-comidas main .seccion-comida .productos .producto {
   display: flex;
+  justify-content: none;
   align-items: center;
   gap: 10px;
   padding: 10px;
@@ -498,18 +493,6 @@ footer .footer-desarrollador p {
 .contenedor-comidas main .seccion-comida .productos .producto .producto-descripcion p {
   margin-bottom: 10px;
 }
-.contenedor-comidas main .seccion-comida .productos .producto .producto-descripcion button {
-  display: block;
-  padding: 4px 20px;
-  border: solid 1px #e50914;
-  background-color: #e50914;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-}
-
-/*ESTILOS DE LA SECCION CONTACTENOS*/
 .contenedor-contacto {
   display: grid;
   grid-template-columns: 1fr;
@@ -525,13 +508,16 @@ footer .footer-desarrollador p {
   margin: 0 auto 50px auto;
   color: #fff;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: none;
+  flex-wrap: wrap;
 }
 .contenedor-contacto main .seccion-contacto h1 {
   width: 100%;
-  margin: 30px 0;
-  color: #e50914;
+  text-align: center;
+  font-size: 24px;
+  margin: 70px 0 30px 0;
+  color: #fff;
 }
 .contenedor-contacto main .seccion-contacto .formulario {
   width: 48%;
@@ -539,16 +525,6 @@ footer .footer-desarrollador p {
 .contenedor-contacto main .seccion-contacto .formulario .input {
   width: 100%;
   margin-bottom: 14px;
-}
-.contenedor-contacto main .seccion-contacto .formulario .input-enviar {
-  display: block;
-  padding: 3px 20px;
-  border: solid 2px #e50914;
-  background-color: transparent;
-  border-radius: 20px;
-  font-size: 16px;
-  color: #fff;
-  cursor: pointer;
 }
 .contenedor-contacto main .seccion-contacto .ubicacion {
   width: 48%;
@@ -650,8 +626,9 @@ footer .footer-desarrollador p {
 @media screen and (max-width: 768px) {
   header nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: none;
+    flex-wrap: wrap;
   }
   header nav ul li {
     padding: 0 10px;

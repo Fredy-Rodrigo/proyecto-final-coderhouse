@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Limelight&display=swap');
+
+@import "_herramientas.scss";
+
+@import "_estilosUniv.scss";
+
+@import "_header.scss";
+
+@import "_footer.scss";
+
+
+/*ESTILOS DE LA PAGINA PRINCIPAL*/
+.contenedor-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    
+    main {
+        grid-area: main;
+        background-color: $background-color;
+        
+        .banner {
+            width: 95%;
+            margin: auto;
+            overflow: hidden;
+            
+            ul {
+                display: flex;
+                width: 400%;
+                animation: cambio 20s infinite alternate;
+                
+                li {
+                    width: 100%;
+                    list-style: none;
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            
+            @keyframes cambio {
+                0% {margin-left: 0%;}
+                20% {margin-left: 0%;}
+                25% {margin-left: -100%;}
+                45% {margin-left: -100%;}
+                50% {margin-left: -200%;}
+                70% {margin-left: -200%;}
+                75% {margin-left: -300%;}
+                100% {margin-left: -300%;}
+            }
+        }
+        
+        .cartelera {
+            width: 75%;
+            margin: 0 auto 70px auto;
+            
+            h2{
+                color: map-get($titulos, color);
+                margin: map-get($titulos, margen);
+                text-align: map-get($titulos, centro);
+                font-size: map-get($titulos , tamanio-h1);
+            }
+            
+            .cartelera-galeria {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-auto-rows: 260px;
+                gap: 10px;
+                
+                img, .ver-mas , .cartelera-opcion{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .card-1 {
+                    grid-column: 1/ span 2;
+                    grid-row: 1/ span 2;
+                }
+                .card {
+                    height: 100%;
+                    background-image: url(../img/cartelera1.jpg);
+                    background-size: 100% 100%;
+                    background-position: center center;
+                    transition: transform 0.2s;
+    
+                    .card-info {
+                        height: 100%;
+                        @extend %centrar;
+                        text-align: center;
+                        flex-direction: column;
+                        color: $secondary-color;
+                        opacity: 0;
+                        transition: all 0.2s;
+    
+                        h3 {
+                            font-size: map-get($titulos, tamanio-h3);
+                            padding: 0 20px 40px 20px;
+                        }
+                        
+                        button {
+                            @extend %card-button;
+                            margin-top: 10px;
+                        }
+                        
+                    }
+                }
+                
+                .card-2 {
+                    background-image: url(../img/cartelera2.jpg);
+                }
+                
+                .card-3 {
+                    background-image: url(../img/cartelera3.jpg);
+                }
+                
+                .card-4 {
+                    background-image: url(../img/cartelera4.jpg);
+                }
+                
+                .card-5 {
+                    background-image: url(../img/cartelera5.jpg);
+                }
+                
+                .card-6 {
+                    background-image: url(../img/cartelera6.jpg);
+                }
+                
+                .card-7 {
+                    background-image: url(../img/cartelera7.jpg);
+                }
+                
+                .card-8 {
+                    background-image: url(../img/cartelera8.jpg);
+                }
+                
+                .card-9 {
+                    background-image: url(../img/cartelera9.jpg);
+                }
+                
+                .card:hover {
+                    transform: scale(1.05);
+                }
+                
+                .card:hover .card-info {
+                    background-color: $hover-card-color;
+                    opacity: 1;
+                }
+                
+                .ver-mas {
+                    height: 100%;
+                    width: 100%;
+                    background-image: none;
+                    background-color: #49535a;
+                    text-align: center;
+                    @extend %centrar;
+                    color: $secondary-color;
+                    font-size: 24px;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .estrenos {
+            margin-bottom: 70px;
+            
+            h2 {
+                
+                color: map-get($titulos, color);
+                margin: map-get($titulos, margen);
+                text-align: map-get($titulos, centro);
+                font-size: map-get($titulos , tamanio-h1);
+            }
+            
+            .estrenos-carousel {
+                @extend %centrar;
+                
+                .flecha-izquierda, .flecha-derecha {
+                    width: 20px;
+                    height: 30px;
+                    margin: 0 10px;
+                    cursor: pointer;
+                }
+                
+                .estrenos-galeria {
+                    width: 75%;
+                    display: flex;
+                    gap: 1%;
+                    
+                    .card {
+                        width: 19.2%;
+                        height: 270px;
+                        background-size: 100% 100%;
+                        background-position: center center;
+                        transition: transform 0.2s;
+    
+                        .card-info {
+                            height: 100%;
+                            @extend %centrar;
+                            text-align: center;
+                            flex-direction: column;
+                            color: $secondary-color;
+                            opacity: 0;
+                            transition: all 0.2s;
+    
+                            h3 {
+                                font-size: map-get($titulos, tamanio-h3);
+                                padding: 0 20px 40px 20px;
+                            }
+                            
+                            button {
+                                @extend %card-button;
+                                margin-top: 10px;
+                            }
+                            
+                        }
+                    }
+                    
+                    .card:hover {
+                        transform: scale(1.05);
+                    }
+                    
+                    .card:hover .card-info {
+                        background-color: $hover-card-color;
+                        opacity: 1;
+                    }
+    
+                    .estrenos-card-1 {
+                        background-image: url(../img/estreno1.jpg);
+                    }
+                    
+                    .estrenos-card-2 {
+                        background-image: url(../img/estreno2.jpg);
+                    }
+                    
+                    .estrenos-card-3 {
+                        background-image: url(../img/estreno3.jpg);
+                    }
+                    
+                    .estrenos-card-4 {
+                        background-image: url(../img/estreno4.jpg);
+                    }
+                    
+                    .estrenos-card-5 {
+                        background-image: url(../img/estreno5.jpg);
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@import "_seccionPeliculas.scss";
+
+@import "_seccionCines.scss";
+
+@import "_seccionComidas.scss";
+
+@import "_seccionContacto.scss";
+
+@import "_mediaQuerys.scss";

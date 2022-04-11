@@ -1,0 +1,51 @@
+.contenedor-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    
+    main {
+        grid-area: main;
+        background-color: $background-color;
+        
+        .seccion-contacto {
+            width: 75%;
+            margin: 0 auto 50px auto;
+            color: $secondary-color;
+            @include flex(flex, space-between, none);
+            flex-wrap: wrap;
+            
+            h1 {
+                width: 100%;
+                text-align: map-get($titulos, centro);
+                font-size: map-get($titulos, tamanio-h1);
+                margin: map-get($titulos, margen);
+                color: map-get($titulos, color);
+            }
+            
+            .formulario {
+                width: 48%;
+                
+                .input {
+                    width: 100%;
+                    margin-bottom: 14px;
+                }
+                
+                .input-enviar {
+                    @extend %section-button;
+                }
+            }
+            
+            .ubicacion {
+                width: 48%;
+                
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

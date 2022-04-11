@@ -1,0 +1,45 @@
+$primary-color: #e50914;
+$secondary-color: #fff;
+$background-color: #292f33;
+$hover-card-color: #64727c73;
+
+$titulos: (
+    color: $secondary-color,
+    margen: 70px 0 30px 0,
+    centro: center,
+    tamanio-h1: 24px,
+    tamanio-h2: 20px, 
+    tamanio-h3: 18px, 
+);
+
+@mixin flex($display, $horizontal, $vertical) {
+    display: $display;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+%centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%card-button {
+    padding: 5px 20px;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 20px;
+    color: $secondary-color;
+    cursor: pointer;
+}
+
+%section-button {
+    display: block;
+    padding: 3px 20px;
+    border: solid 2px $primary-color;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    color: $secondary-color;
+    cursor: pointer;
+}

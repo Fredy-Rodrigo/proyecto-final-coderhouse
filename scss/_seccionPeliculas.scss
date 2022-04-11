@@ -1,0 +1,63 @@
+.contenedor-peliculas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    
+    main {
+        grid-area: main;
+        background-color: $background-color;
+        
+        .seccion-peliculas {
+            width: 75%;
+            margin: auto;
+            color: $secondary-color;
+            
+            h1 {
+                margin: map-get($titulos, margen);
+                text-align: map-get($titulos, centro);
+                font-size: map-get($titulos, tamanio-h1);
+                color: map-get($titulos, color);
+            }
+            
+            .peliculas-lista {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                gap: 30px 20px;
+                margin-bottom: 70px;
+                
+                .pelicula {
+                    text-align: center;
+                    
+                    img{
+                        width: 100%;
+                        transition: transform 0.2s ease-in-out;
+                    }
+                    
+                    p:nth-child(2) {
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                    
+                    p:last-child {
+                        font-size: 14px;
+                    }
+                }
+                
+                .pelicula:hover img {
+                    transform: scale(1.05);
+                    box-shadow: 0 0 10px 0 #d1ecff91;
+                }
+            }
+
+            button {
+                @extend %section-button;
+                margin: 0 auto 50px auto;
+            }
+        }
+    }
+}

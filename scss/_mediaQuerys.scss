@@ -1,0 +1,396 @@
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        
+        .logo {
+            width: auto;
+            margin-top: 10px;
+        }
+        
+        nav {
+            width: auto;
+            margin: 10px 0;
+        }
+    }
+    
+    .contenedor-index {
+        grid-template-rows: auto auto auto;
+
+        main {
+            .cartelera {
+                .cartelera-galeria {
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-auto-rows: 350px;
+                }
+            }
+
+            .estrenos {
+                .estrenos-carousel {
+                    .estrenos-galeria {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 10px;
+                        
+                        .card {
+                            width: 24%;
+                            height: 250px;
+                            margin-bottom: 10px;
+                        }    
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    .contenedor-peliculas {
+        grid-template-rows: auto auto auto;
+
+        main {
+            .seccion-peliculas {
+                .peliculas-lista {
+                    grid-template-columns: repeat(3, 1fr);
+                    .pelicula {
+                        img {
+                            width: 90%;
+                            margin: auto;   
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-cines {
+        grid-template-rows: auto auto auto;
+
+        main {
+            .seccion-cines {
+                .cines {
+                    grid-template-columns: repeat(2, 1fr);
+                }        
+            }
+        }
+    }
+
+    .contenedor-comidas {
+        grid-template-rows: auto auto auto;
+        main {
+            .seccion-comida {
+                .combos {
+                    .combo {
+                        img  {
+                            width: 50%;
+                        }
+                        .combo-descripcion {
+                            font-size: 14px;
+                            button{
+                                padding: 2px 20px;
+                            }
+                        }
+                    }
+                }
+                
+                .productos {
+                    grid-template-columns: repeat(2, 1fr);
+                    
+                    .producto {
+                        .producto-descripcion {
+                            font-size: 14px;
+                            
+                            button {
+                                padding: 2px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-contacto {
+        grid-template-rows: auto auto auto;
+
+        main {
+            .seccion-contacto {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+    
+                .formulario {
+                    width: 450px;
+                    .input-enviar {
+                        margin: auto;
+                    }
+                }
+                .ubicacion {
+                    width: 450px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            ul {
+                @include flex(flex, center, none);
+                flex-wrap: wrap;
+                li {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+    
+    .contenedor-index {
+        main {
+            .cartelera {
+                .cartelera-galeria {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            .estrenos {
+                .estrenos-carousel {
+                    .estrenos-galeria {
+                        .card {
+                            width: 32%;
+                            height: 250px;
+                        }    
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-peliculas {
+        main {
+            .seccion-peliculas {
+                .peliculas-lista {
+                    grid-template-columns: repeat(2, 1fr);
+                    .pelicula {
+                        img {
+                            width: 80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-cines {
+        main {
+            .seccion-cines {
+                .cines {
+                    grid-template-columns: 1fr;
+                    .cine {
+                        text-align: center;
+                        img {
+                            display: block;
+                            max-width: 400px;
+                            margin: 5px auto 5px auto;
+                        }
+                    }
+                }
+        
+            }
+        }
+    }
+
+    .contenedor-comidas {
+        main {
+            .seccion-comida {
+                .combo {
+                    flex-direction: column;
+                    img {
+                        width: 70%;
+                    }
+                    .combo-descripcion {
+                        text-align: center;
+                        button {
+                            margin: auto;
+                        }
+                    }
+                }
+        
+                .producto {
+                    flex-direction: column;
+                    img  {
+                        width: 70%;
+                    }
+                    .producto-descripcion {
+                        text-align: center;
+                        button {
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-contacto {
+        main {
+            .seccion-contacto {
+                .formulario {
+                    max-width: 100%;
+                }
+
+                .ubicacion {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-informacion {
+            font-size: 14px;
+        }
+
+        .footer-redes {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        nav {
+            ul {
+                flex-direction: column;
+                align-items: center;
+                li {
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+
+    .contenedor-index {
+        main {
+            .cartelera {
+                .cartelera-galeria {
+                    grid-auto-rows: 250px;
+                }
+            }
+
+            .estrenos {
+                .estrenos-carousel {
+                    .estrenos-galeria {
+                        .card {
+                            width: 48%;
+                            height: 230px;
+                        }    
+                    }
+                }
+            }
+        }
+
+    }
+
+    .contenedor-peliculas {
+        main {
+            .seccion-peliculas {
+                h1 {
+                    font-size: 18px;
+                }
+                
+                .peliculas-lista {
+                    grid-template-columns: 1fr;
+                    
+                    .pelicula {
+                        img {
+                            width: 50%;
+                            min-width: 200px;
+                        }
+                        
+                        p:nth-child(2) {
+                            font-weight: bold;
+                            font-size: 14px;
+                        }
+                        
+                        p:last-child {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-cines {
+        main {
+            .seccion-cines {
+                h1 {
+                    font-size: 18px;
+                }
+        
+                .cines {
+                    .cine {
+                        h2 {
+                            font-size: 18px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .contenedor-comidas {
+        main {
+            .seccion-comida {
+                h1, h2{
+                    font-size: 18px;
+                }
+        
+                .combos {
+                    grid-template-columns: 1fr;
+                    .combo {
+                        img {
+                            width: 40%;
+                        }
+                    }
+                }
+                
+                .productos {
+                    grid-template-columns: 1fr;
+                    .producto {
+                        img {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        
+        .footer-informacion {
+            width: 70%;
+            text-align: center;
+        }
+
+        .footer-redes {
+            width: 70%;
+            text-align: center;
+        }
+    }
+
+}
+

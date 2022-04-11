@@ -1,0 +1,60 @@
+/*ESTILOS DEL FOOTER*/
+footer {
+    width: 100%;
+    grid-area: footer;
+    background-color: #221f1f;
+    @include flex(flex, center, none);
+    flex-wrap: wrap;
+    
+    .footer-informacion {
+        width: 40%;
+        padding: 20px 0;
+
+        ul {
+            li {
+                list-style: none;
+                color: $secondary-color;
+                margin: 20px 0;
+            }
+        }
+    }
+    
+    .footer-redes {
+        width: 40%;
+        
+        .siguenos {
+            color: $secondary-color;
+            padding: 20px 0;
+            
+            p {
+                margin: 20px 0 10px 0;  
+            }
+            
+            img {
+                margin-right: 20px;
+            }
+        }
+
+        .libro {
+            p {
+                color: $secondary-color;
+            }
+            
+            img {
+                margin: 5px 0;
+            }
+        }
+    }
+    
+    .footer-desarrollador {
+        width: 80%;
+        border-top: 1px solid rgb(126, 126, 126);
+        
+        p {
+            text-align: center;
+            color: $secondary-color;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+    }
+}
