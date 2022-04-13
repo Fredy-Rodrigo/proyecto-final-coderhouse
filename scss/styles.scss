@@ -97,7 +97,7 @@
                         opacity: 0;
                         transition: all 0.2s;
     
-                        h3 {
+                        p {
                             font-size: map-get($titulos, tamanio-h3);
                             padding: 0 20px 40px 20px;
                         }
@@ -207,7 +207,7 @@
                             opacity: 0;
                             transition: all 0.2s;
     
-                            h3 {
+                            p {
                                 font-size: map-get($titulos, tamanio-h3);
                                 padding: 0 20px 40px 20px;
                             }

@@ -217,7 +217,7 @@ footer .footer-desarrollador p {
   opacity: 0;
   transition: all 0.2s;
 }
-.contenedor-index main .cartelera .cartelera-galeria .card .card-info h3 {
+.contenedor-index main .cartelera .cartelera-galeria .card .card-info p {
   font-size: 18px;
   padding: 0 20px 40px 20px;
 }
@@ -300,7 +300,7 @@ footer .footer-desarrollador p {
   opacity: 0;
   transition: all 0.2s;
 }
-.contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card .card-info h3 {
+.contenedor-index main .estrenos .estrenos-carousel .estrenos-galeria .card .card-info p {
   font-size: 18px;
   padding: 0 20px 40px 20px;
 }
