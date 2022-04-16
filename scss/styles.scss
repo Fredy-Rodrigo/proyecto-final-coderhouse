@@ -24,8 +24,7 @@
         background-color: $background-color;
         
         .banner {
-            width: 95%;
-            margin: auto;
+            width: 100%;
             overflow: hidden;
             
             ul {
@@ -106,6 +105,10 @@
                             @extend %card-button;
                             margin-top: 10px;
                         }
+
+                        button:hover {
+                            background-color: rgb(190, 0, 0);
+                        }
                         
                     }
                 }
@@ -162,6 +165,10 @@
                     font-size: 24px;
                     cursor: pointer;
                 }
+
+                .ver-mas:hover {
+                    text-shadow: 0 0 10px $primary-color;
+                }
             }
         }
         
@@ -217,6 +224,9 @@
                                 margin-top: 10px;
                             }
                             
+                            button:hover {
+                                background-color: rgb(190, 0, 0);
+                            }
                         }
                     }
                     

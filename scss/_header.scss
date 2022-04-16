@@ -4,7 +4,7 @@ header {
     width: 100%;
     grid-area: header;
     background: linear-gradient(180deg, rgba(34,31,31,1) 10%, rgba(41,47,51,1) 100%);
-    @include flex(flex, center, none);
+    @include flex(flex, center, center);
 
     .logo {
         width: 12%;
@@ -15,10 +15,26 @@ header {
             font-family: 'Limelight', cursive;
             color: $secondary-color;
             font-size: 30px;
+            text-shadow: 4px 4px 2px $primary-color
         }
 
         span:hover {
             color: $primary-color;
+        }
+    }
+
+    #icon-menu {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+
+    label {
+        img {
+            width: 35px;
+            height: 35px;
         }
     }
 
@@ -30,15 +46,18 @@ header {
             li {
                 list-style: none;
                 display: inline-block;
-                padding-left: 30px;
+                padding-left: 20px;
 
                 a {
+                    padding: 10px 0;
                     text-decoration:none;
-                    color: $secondary-color
+                    font-size: map-get($titulos, tamanio-h3);
+                    color: $secondary-color;
                 }
 
                 a:hover {
                     border-bottom: 2.5px solid $primary-color;
+                    color: $primary-color;
                 }
             }
         }

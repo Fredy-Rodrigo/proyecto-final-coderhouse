@@ -58,6 +58,10 @@
                 @extend %section-button;
                 margin: 0 auto 50px auto;
             }
+
+            button:hover {
+                background-color: $primary-color;
+            }
         }
     }
 }
