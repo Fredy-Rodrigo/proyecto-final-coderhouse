@@ -37,6 +37,10 @@
                 .input-enviar {
                     @extend %section-button;
                 }
+
+                .input-enviar:hover {
+                    background-color: $primary-color;
+                }
             }
             
             .ubicacion {
